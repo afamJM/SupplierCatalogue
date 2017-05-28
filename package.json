@@ -1,0 +1,19 @@
+{
+  "name": "suppliercatalogue",
+  "version": "1.0.0",
+  "description": "The hitched Supplier Catalogue MVP Prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose stop",
+    "destroy": "docker-compose rm -f",
+    "import": "docker exec suppliercatalogue_import dotnet run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.immediate.co.uk/Weddings/SupplierCatalogue.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

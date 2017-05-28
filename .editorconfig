@@ -1,0 +1,29 @@
+# http://EditorConfig.org 
+#    If you make a change, why not fix the whole solution with.. 
+# npm install -g eclint 
+# eclint fix * "**/*.{asa,asax,ascx,ashx,aspx,cd,cmd,coffee,
+#config,cs,csproj,cshtml,css,dtd,edmx,htm,html,js,json,jsx,
+#msbuild,nuspec,resx,ruleset,StyleCop,targets,tt,ts,txt,svg,
+#vb,vbhtml,vbproj,vbs,wsf,xml,yml,xunit,xsd,xsl,xslt}" 
+# git commit -a -m "Fixes files that violate .editorconfig" 
+ 
+root = true
+
+# 1/2: Duplicated into 2 sections due to a char limit in Visual Studio
+[*.{asa,asax,ascx,ashx,aspx,cd,cmd,coffee,config,cs,csproj,cshtml,css,dtd,edmx,htm,html}]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+# 2/2: Duplicated into 2 sections due to a char limit in Visual Studio
+[*.{js,json,jsx,msbuild,nuspec,resx,ruleset,StyleCop,targets,tt,ts,txt,svg,vb,vbhtml,vbproj,vbs,wsf,xml,yml,xunit,xsd,xsl,xslt}]
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+
+#Need to consider what Charset we want for our files.
