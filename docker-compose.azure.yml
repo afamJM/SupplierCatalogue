@@ -4,7 +4,6 @@ services:
         environment: 
             - datastore__connection=${datastore__connection}
             - clientUrls__0=http://hitched-supplier-catalogue.westeurope.cloudapp.azure.com    
-        container_name: suppliercatalogue_api
         image: hitchedregistry1.azurecr.io/app/suppliercatalogue_api:latest
         ports:
            - "8080:8080"
@@ -16,7 +15,6 @@ services:
         environment: 
             - API_DEST=${API_DEST}
             - API_PORT=${API_PORT}    
-        container_name: suppliercatalogue_ui
         image: hitchedregistry1.azurecr.io/app/suppliercatalogue_ui:latest
         ports:
             - "80:80"
@@ -24,10 +22,7 @@ services:
             - api
         tty:
             true
-        
-            
     db:
-        container_name: suppliercatalogue_db
         image: mongo:latest
         ports:
             - "27017:27017"
