@@ -20,6 +20,8 @@ services:
         build: SupplierCatalogue.UI/.
         ports:
             - "7080:80"
+        links:
+            - api
         tty:
             true
     db:
