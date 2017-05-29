@@ -22,8 +22,8 @@ services:
             - "80:80"
         tty:
             true
-        links:
-            - api
+        
+            
     db:
         container_name: suppliercatalogue_db
         image: mongo:latest
