@@ -18,6 +18,8 @@ services:
         image: hitchedregistry1.azurecr.io/app/suppliercatalogue_ui:latest
         ports:
             - "80:80"
+        links:
+            - api
         tty:
             true
     db:
