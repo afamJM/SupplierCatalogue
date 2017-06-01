@@ -20,8 +20,8 @@ services:
             - "80:80"
         links:
             - api
-        tty:
-            true
+        tty: true
+     
     db:
         image: mongo:latest
         ports:
